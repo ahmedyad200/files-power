@@ -32,17 +32,22 @@ return false
 end
 
 if text == 'انا مين' and BasicConstructor(msg) then 
-send(msg.chat_id_,msg.id_, ' انت هنا منشئ اساسي يعني اعلى رتبه عاوزك تفتخر😹 ') 
+send(msg.chat_id_,msg.id_, ' انت هنا منشئ اساسي يعني اعلى رتبه عاوزك تفتخر 😹 ') 
 return false
 end
 
 if text == 'انا مين' and Manager(msg) then 
-send(msg.chat_id_,msg.id_, ' انت المدير يعني الروم تحت سيطرتك😹 ') 
+send(msg.chat_id_,msg.id_, ' انت المدير يعني الروم تحت سيطرتك 😹 ') 
+return false
+end
+
+if text == 'انا مين' and Gmod(msg) then 
+send(msg.chat_id_,msg.id_, ' انت مجرد ادمن عام شاحت الرتبه بي العافيه 😂 ') 
 return false
 end
 
 if text == 'انا مين' and Mod(msg) then 
-send(msg.chat_id_,msg.id_, ' انت مجرد ادمن اجتهد عشان ياخد رتبه😹 ') 
+send(msg.chat_id_,msg.id_, ' انت مجرد ادمن اجتهد عشان ياخد رتبه 😹 ') 
 return false
 end
 
@@ -52,7 +57,7 @@ return false
 end
 
 if text == 'انا مين' then
-send(msg.chat_id_,msg.id_, 'انت مجرد عضو ملوش لازمه😹 ') 
+send(msg.chat_id_,msg.id_, 'انت مجرد عضو ملوش لازمه 😹 ') 
 return false
 end
 
