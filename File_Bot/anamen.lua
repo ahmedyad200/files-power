@@ -21,6 +21,12 @@ send(msg.chat_id_,msg.id_, ' انت مدير عام يعني شخص عظيم ')
 return false
 end
 
+if text == 'انا مين' and Manager2(msg) then 
+send(msg.chat_id_,msg.id_, ' انت مدير ثاني يعني الي رفعك متابع قناه السورس 😂😂 ') 
+return false
+end
+
+
 if text == 'انا مين' and cleaner(msg) then 
 send(msg.chat_id_,msg.id_, ' انت منظف ملهوش لزمه 😂 ') 
 return false
@@ -43,11 +49,6 @@ end
 
 if text == 'انا مين' and Manager(msg) then 
 send(msg.chat_id_,msg.id_, ' انت المدير يعني الروم تحت سيطرتك 😹 ') 
-return false
-end
-
-if text == 'انا مين' and Manager2(msg) then 
-send(msg.chat_id_,msg.id_, ' انت مدير ثاني يعني الي رفعك متابع قناه السورس 😂😂 ') 
 return false
 end
 
