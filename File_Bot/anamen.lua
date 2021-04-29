@@ -26,7 +26,6 @@ send(msg.chat_id_,msg.id_, ' انت مدير ثاني تبقي شخص مظلوم
 return false
 end
 
-
 if text == 'انا مين' and cleaner(msg) then 
 send(msg.chat_id_,msg.id_, ' انت منظف ملهوش لزمه 😂 ') 
 return false
