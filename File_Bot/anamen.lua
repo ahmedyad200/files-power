@@ -17,12 +17,12 @@ return false
 end
 
 if text == 'انا مين' and Gmanager(msg) then 
-send(msg.chat_id_,msg.id_, ' انت مدير عام يعني شخص عظيم ') 
+send(msg.chat_id_,msg.id_, ' انت مدير عام يعني شخص عظيم 😌 ') 
 return false
 end
 
 if text == 'انا مين' and Manager2(msg) then 
-send(msg.chat_id_,msg.id_, ' انت مدير ثاني يعني الي رفعك متابع قناه السورس 😂😂 ') 
+send(msg.chat_id_,msg.id_, ' انت مدير ثاني تبقي شخص مظلوم 🥺 ') 
 return false
 end
 
