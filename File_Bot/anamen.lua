@@ -16,6 +16,11 @@ send(msg.chat_id_,msg.id_, 'انت مطوري الغالي 😊')
 return false
 end
 
+if text == 'انا مين' and Gmanager(msg) then 
+send(msg.chat_id_,msg.id_, ' انت مدير عام يعني شخص عظيم ') 
+return false
+end
+
 if text == 'انا مين' and cleaner(msg) then 
 send(msg.chat_id_,msg.id_, ' انت منظف ملهوش لزمه 😂 ') 
 return false
