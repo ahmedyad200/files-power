@@ -12,7 +12,7 @@ local Msg_id = data.message_id_
 local msg_idd = Msg_id/2097152/0.5
 local Text = data.payload_.data_
 
-if text == "من سيربح المليون" or text 'الاسئله' then
+if text == "من سيربح المليون" or text == 'الاسئله' then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -29,8 +29,12 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'ابدء لعب المستوي الاول ' callback_data="mel1"}},
-{{text = ' معلومات عن اللعبه ' callback_data="melinfo"}},
+{
+{text = 'ابدء لعب المستوي الاول ' callback_data="mel1"},
+},
+{
+{text = ' معلومات عن اللعبه ' callback_data="melinfo"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -51,7 +55,9 @@ AHMED @ahmedyad200
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "ابدء اللعب" callback_data="mel1"}},
+{
+{text = "ابدء اللعب" callback_data="mel1"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -62,7 +68,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "ابدء مجددا" callback_data="mel1"}},
+{
+{text = "ابدء مجددا" callback_data="mel1"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -73,7 +81,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "ابدء مجددا" callback_data="mel1"}},
+{
+{text = "ابدء مجددا" callback_data="mel1"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -84,9 +94,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = " دمياط " callback_data="✖"}},
-{{text = "الاسكندريه " callback_data="❌"}},
-{{text = "القاهره " callback_data="mel2"}},
+{
+{text = " دمياط " callback_data="✖"},
+},
+{
+{text = "الاسكندريه " callback_data="❌"},
+},
+{
+{text = "القاهره " callback_data="mel2"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -97,7 +113,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel3"}},
+{
+{text = "أكمل" callback_data="mel3"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -108,9 +126,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "23 " callback_data="✖"}},
-{{text = "24 " callback_data="mel4"}},
-{{text = "22 " callback_data="❌"}},
+{
+{text = "23 " callback_data="✖"},
+},
+{
+{text = "24 " callback_data="mel4"},
+},
+{
+{text = "22 " callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -121,7 +145,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel5"}},
+{
+{text = "أكمل" callback_data="mel5"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -132,9 +158,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "بيت " callback_data="✖"}},
-{{text = "غصن " callback_data="❌"}},
-{{text = "خليه" callback_data="mel7"}},
+{
+{text = "بيت " callback_data="✖"},
+},
+{
+{text = "غصن " callback_data="❌"},
+},
+{
+{text = "خليه" callback_data="mel7"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -145,7 +177,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel8"}},
+{
+{text = "أكمل" callback_data="mel8"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -156,9 +190,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "اسطنبول " callback_data="mel9"}},
-{{text = "دمشق " callback_data="✖"}},
-{{text = "القاهره " callback_data="❌"}},
+{
+{text = "اسطنبول " callback_data="mel9"},
+},
+{
+{text = "دمشق " callback_data="✖"},
+},
+{
+{text = "القاهره " callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -169,7 +209,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel10"}},
+{
+{text = "أكمل" callback_data="mel10"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -180,9 +222,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "الجمهوري " callback_data="✖"}},
-{{text = "الامبراطوري " callback_data="mel11"}},
-{{text = "الملكي " callback_data="❌"}},
+{
+{text = "الجمهوري " callback_data="✖"},
+},
+{
+{text = "الامبراطوري " callback_data="mel11"},
+},
+{
+{text = "الملكي " callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -193,7 +241,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel12"}},
+{
+{text = "أكمل" callback_data="mel12"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -204,9 +254,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "الارض  " callback_data="✖"}},
-{{text = "المشتري " callback_data="❌"}},
-{{text = "المريخ " callback_data="mel13"}},
+{
+{text = "الارض  " callback_data="✖"},
+},
+{
+{text = "المشتري " callback_data="❌"},
+},
+{
+{text = "المريخ " callback_data="mel13"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -217,7 +273,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel14"}},
+{
+{text = "أكمل" callback_data="mel14"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -228,9 +286,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = " الكوثر " callback_data="✖"}},
-{{text = "الاخلاص " callback_data="❌"}},
-{{text = "الكافرون " callback_data="mel15"}},
+{
+{text = " الكوثر " callback_data="✖"},
+},
+{
+{text = "الاخلاص " callback_data="❌"},
+},
+{
+{text = "الكافرون " callback_data="mel15"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -241,7 +305,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel17"}},
+{
+{text = "أكمل" callback_data="mel17"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -252,9 +318,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "الفيل " callback_data="✖"}},
-{{text = "الحوت الازرق " callback_data="mel18"}},
-{{text = "الجمل " callback_data="❌"}},
+{
+{text = "الفيل " callback_data="✖"},
+},
+{
+{text = "الحوت الازرق " callback_data="mel18"},
+},
+{
+{text = "الجمل " callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -265,7 +337,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel19"}},
+{
+{text = "أكمل" callback_data="mel19"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -276,9 +350,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "ثلاث مرات " callback_data="mel21"}},
-{{text = "مرتين " callback_data="✖"}},
-{{text = "خمس مرات " callback_data="❌"}},
+{
+{text = "ثلاث مرات " callback_data="mel21"},
+},
+{
+{text = "مرتين " callback_data="✖"},
+},
+{
+{text = "خمس مرات " callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -289,9 +369,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "الشعب الامريكي " callback_data="✖"}},
-{{text = "الشعب البريطاني " callback_data="mel22"}},
-{{text = "الشعب الصيني " callback_data="❌"}},
+{
+{text = "الشعب الامريكي " callback_data="✖"},
+},
+{
+{text = "الشعب البريطاني " callback_data="mel22"},
+},
+{
+{text = "الشعب الصيني " callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -302,7 +388,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel23"}},
+{
+{text = "أكمل" callback_data="mel23"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -313,9 +401,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "الملك سعود ." callback_data="✖"}},
-{{text = "الملك عبد العزيز بن سعود. " callback_data="mel24"}},
-{{text = "الملك فيصل " callback_data="❌"}},
+{
+{text = "الملك سعود ." callback_data="✖"},
+},
+{
+{text = "الملك عبد العزيز بن سعود. " callback_data="mel24"},
+},
+{
+{text = "الملك فيصل " callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -326,7 +420,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel25"}},
+{
+{text = "أكمل" callback_data="mel25"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -337,9 +433,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "الروبن ." callback_data="✖"}},
-{{text = "الدينار " callback_data="❌"}},
-{{text = "الزلوط ." callback_data="mel26"}},
+{
+{text = "الروبن ." callback_data="✖"},
+},
+{
+{text = "الدينار " callback_data="❌"},
+},
+{
+{text = "الزلوط ." callback_data="mel26"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -350,7 +452,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel27"}},
+{
+{text = "أكمل" callback_data="mel27"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -361,9 +465,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "مصر. " callback_data="✖"}},
-{{text = "الصومال " callback_data="mel28"}},
-{{text = "العراق " callback_data="❌"}},
+{
+{text = "مصر. " callback_data="✖"},
+},
+{
+{text = "الصومال " callback_data="mel28"},
+},
+{
+{text = "العراق " callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -374,7 +484,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel29"}},
+{
+{text = "أكمل" callback_data="mel29"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -385,9 +497,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "الدينار." callback_data="✖"}},
-{{text = "الريال " callback_data="❌"}},
-{{text = "الجنيه." callback_data="mel30"}},
+{
+{text = "الدينار." callback_data="✖"},
+},
+{
+{text = "الريال " callback_data="❌"},
+},
+{
+{text = "الجنيه." callback_data="mel30"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -398,7 +516,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel31"}},
+{
+{text = "أكمل" callback_data="mel31"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -409,9 +529,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "مرسي ." callback_data="✖"}},
-{{text = "السيسي." callback_data="mel32"}},
-{{text = "مبارك" callback_data="❌"}},
+{
+{text = "مرسي ." callback_data="✖"},
+},
+{
+{text = "السيسي." callback_data="mel32"},
+},
+{
+{text = "مبارك" callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -422,7 +548,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel34"}},
+{
+{text = "أكمل" callback_data="mel34"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -433,9 +561,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "360 يوم ." callback_data="✖"}},
-{{text = "366 يوم" callback_data="mel35"}},
-{{text = "364 يوم." callback_data="❌"}},
+{
+{text = "360 يوم ." callback_data="✖"},
+},
+{
+{text = "366 يوم" callback_data="mel35"},
+},
+{
+{text = "364 يوم." callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -446,7 +580,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel36"}},
+{
+{text = "أكمل" callback_data="mel36"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -457,9 +593,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "العراق." callback_data="✖"}},
-{{text = "السعوديه " callback_data="❌"}},
-{{text = "مصر." callback_data="mel37"}},
+{
+{text = "العراق." callback_data="✖"},
+},
+{
+{text = "السعوديه " callback_data="❌"},
+},
+{
+{text = "مصر." callback_data="mel37"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -470,7 +612,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel38"}},
+{
+{text = "أكمل" callback_data="mel38"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -481,9 +625,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "لندن ." callback_data="✖"}},
-{{text = "روما." callback_data="mel39"}},
-{{text = "طوكيو " callback_data="❌"}},
+{
+{text = "لندن ." callback_data="✖"},
+},
+{
+{text = "روما." callback_data="mel39"},
+},
+{
+{text = "طوكيو " callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -494,7 +644,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel40"}},
+{
+{text = "أكمل" callback_data="mel40"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -505,9 +657,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "٥٥ عضله ." callback_data="✖"}},
-{{text = "٣٣ عضله " callback_data="❌"}},
-{{text = "٤٤ عضله." callback_data="mel41"}},
+{
+{text = "٥٥ عضله ." callback_data="✖"},
+},
+{
+{text = "٣٣ عضله " callback_data="❌"},
+},
+{
+{text = "٤٤ عضله." callback_data="mel41"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -518,7 +676,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel42"}},
+{
+{text = "أكمل" callback_data="mel42"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -530,7 +690,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "ابدء المستوي الثاني " callback_data="mel43"}},
+{
+{text = "ابدء المستوي الثاني " callback_data="mel43"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -541,9 +703,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "صلاة الفجر ." callback_data="✖"}},
-{{text = "صلاة الظهر ." callback_data="mel44"}},
-{{text = "صلاة العصر " callback_data="❌"}},
+{
+{text = "صلاة الفجر ." callback_data="✖"},
+},
+{
+{text = "صلاة الظهر ." callback_data="mel44"},
+},
+{
+{text = "صلاة العصر " callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -554,7 +722,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel45"}},
+{
+{text = "أكمل" callback_data="mel45"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -564,9 +734,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "الكيراتين " callback_data="mel46"}},
-{{text = "البروتين " callback_data="✖"}},
-{{text = "النيترانين " callback_data="❌"}},
+{
+{text = "الكيراتين " callback_data="mel46"},
+},
+{
+{text = "البروتين " callback_data="✖"},
+},
+{
+{text = "النيترانين " callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -577,7 +753,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel47"}},
+{
+{text = "أكمل" callback_data="mel47"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -588,9 +766,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "في الفم " callback_data="mel48"}},
-{{text = "المعده " callback_data="✖"}},
-{{text = "البنكرياس " callback_data="❌"}},
+{
+{text = "في الفم " callback_data="mel48"},
+},
+{
+{text = "المعده " callback_data="✖"},
+},
+{
+{text = "البنكرياس " callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -601,7 +785,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel49"}},
+{
+{text = "أكمل" callback_data="mel49"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -612,9 +798,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "إيزابيلا الأولى " callback_data="mel50"}},
-{{text = "إيزابيلا الثانيه " callback_data="✖"}},
-{{text = "إليزابيث " callback_data="❌"}},
+{
+{text = "إيزابيلا الأولى " callback_data="mel50"},
+},
+{
+{text = "إيزابيلا الثانيه " callback_data="✖"},
+},
+{
+{text = "إليزابيث " callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -625,7 +817,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel51"}},
+{
+{text = "أكمل" callback_data="mel51"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -636,9 +830,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "الحديد " callback_data="mel52"}},
-{{text = "فيتامين c " callback_data="✖"}},
-{{text = "فيتامين A " callback_data="❌"}},
+{
+{text = "الحديد " callback_data="mel52"},
+},
+{
+{text = "فيتامين c " callback_data="✖"},
+},
+{
+{text = "فيتامين A " callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -649,7 +849,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel53"}},
+{
+{text = "أكمل" callback_data="mel53"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -660,9 +862,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "١٠٠ مليون خليه " callback_data="✖"}},
-{{text = "٢٠٠ مليون خليه " callback_data="mel54"}},
-{{text = "٣٠٠ مليون خليه " callback_data="❌"}},
+{
+{text = "١٠٠ مليون خليه " callback_data="✖"},
+},
+{
+{text = "٢٠٠ مليون خليه " callback_data="mel54"},
+},
+{
+{text = "٣٠٠ مليون خليه " callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -673,7 +881,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel55"}},
+{
+{text = "أكمل" callback_data="mel55"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -684,9 +894,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "السلطعون " callback_data="✖"}},
-{{text = "قنديل البحر " callback_data="❌"}},
-{{text = "الاخطبوط " callback_data="mel56"}},
+{
+{text = "السلطعون " callback_data="✖"},
+},
+{
+{text = "قنديل البحر " callback_data="❌"},
+},
+{
+{text = "الاخطبوط " callback_data="mel56"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -697,7 +913,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel57"}},
+{
+{text = "أكمل" callback_data="mel57"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -708,9 +926,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "سورة الفاتحة " callback_data="✖"}},
-{{text = "سورة البقرة" callback_data="❌"}},
-{{text = "سورة الملك" callback_data="mel58"}},
+{
+{text = "سورة الفاتحة " callback_data="✖"},
+},
+{
+{text = "سورة البقرة" callback_data="❌"},
+},
+{
+{text = "سورة الملك" callback_data="mel58"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -721,7 +945,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel59"}},
+{
+{text = "أكمل" callback_data="mel59"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -732,9 +958,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أوسلو " callback_data="✖"}},
-{{text = "نيويورك" callback_data="mel60"}},
-{{text = "باريس" callback_data="❌"}},
+{
+{text = "أوسلو " callback_data="✖"},
+},
+{
+{text = "نيويورك" callback_data="mel60"},
+},
+{
+{text = "باريس" callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -745,7 +977,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel61"}},
+{
+{text = "أكمل" callback_data="mel61"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -756,9 +990,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "نهر في الجنه " callback_data="✖"}},
-{{text = "عين في الجنه" callback_data="mel62"}},
-{{text = "بيت في الجنه" callback_data="❌"}},
+{
+{text = "نهر في الجنه " callback_data="✖"},
+},
+{
+{text = "عين في الجنه" callback_data="mel62"},
+},
+{
+{text = "بيت في الجنه" callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -769,7 +1009,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel63"}},
+{
+{text = "أكمل" callback_data="mel63"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -780,9 +1022,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "الكهف " callback_data="mel64"}},
-{{text = "المائده " callback_data="✖"}},
-{{text = "البقره " callback_data="❌"}},
+{
+{text = "الكهف " callback_data="mel64"},
+},
+{
+{text = "المائده " callback_data="✖"},
+},
+{
+{text = "البقره " callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -793,7 +1041,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel65"}},
+{
+{text = "أكمل" callback_data="mel65"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -804,9 +1054,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "المجادله " callback_data="✖"}},
-{{text = "مريم " callback_data="❌"}},
-{{text = "الرحمن " callback_data="mel66"}},
+{
+{text = "المجادله " callback_data="✖"},
+},
+{
+{text = "مريم " callback_data="❌"},
+},
+{
+{text = "الرحمن " callback_data="mel66"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -817,7 +1073,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel67"}},
+{
+{text = "أكمل" callback_data="mel67"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -828,9 +1086,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "طه " callback_data="mel68"}},
-{{text = "القلم " callback_data="✖"}},
-{{text = "يس " callback_data="❌"}},
+{
+{text = "طه " callback_data="mel68"},
+},
+{
+{text = "القلم " callback_data="✖"},
+},
+{
+{text = "يس " callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -841,7 +1105,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel70"}},
+{
+{text = "أكمل" callback_data="mel70"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -852,9 +1118,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "اليمامه " callback_data="mel71"}},
-{{text = "الخندق " callback_data="✖"}},
-{{text = "القادسيه " callback_data="❌"}},
+{
+{text = "اليمامه " callback_data="mel71"},
+},
+{
+{text = "الخندق " callback_data="✖"},
+},
+{
+{text = "القادسيه " callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -865,7 +1137,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel72"}},
+{
+{text = "أكمل" callback_data="mel72"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -876,9 +1150,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "الاخطبوط " callback_data="✖"}},
-{{text = "نجم البحر " callback_data="mel73"}},
-{{text = "العنكبوت " callback_data="❌"}},
+{
+{text = "الاخطبوط " callback_data="✖"},
+},
+{
+{text = "نجم البحر " callback_data="mel73"},
+},
+{
+{text = "العنكبوت " callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -889,7 +1169,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel74"}},
+{
+{text = "أكمل" callback_data="mel74"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -900,9 +1182,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "النعامه" callback_data="mel75"}},
-{{text = "الصقر" callback_data="✖"}},
-{{text = "النسر " callback_data="❌"}},
+{
+{text = "النعامه" callback_data="mel75"},
+},
+{
+{text = "الصقر" callback_data="✖"},
+},
+{
+{text = "النسر " callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -913,7 +1201,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel76"}},
+{
+{text = "أكمل" callback_data="mel76"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -924,9 +1214,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "التبت " callback_data="mel77"}},
-{{text = "ادار" callback_data="✖"}},
-{{text = "عسير " callback_data="❌"}},
+{
+{text = "التبت " callback_data="mel77"},
+},
+{
+{text = "ادار" callback_data="✖"},
+},
+{
+{text = "عسير " callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -937,7 +1233,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel78"}},
+{
+{text = "أكمل" callback_data="mel78"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -948,9 +1246,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "كوك" callback_data="✖"}},
-{{text = "البسفور" callback_data="mel79"}},
-{{text = "كامون " callback_data="❌"}},
+{
+{text = "كوك" callback_data="✖"},
+},
+{
+{text = "البسفور" callback_data="mel79"},
+},
+{
+{text = "كامون " callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -961,7 +1265,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel80"}},
+{
+{text = "أكمل" callback_data="mel80"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -972,9 +1278,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "سبعه" callback_data="✖"}},
-{{text = "ثمانية" callback_data="mel81"}},
-{{text = "أربعه " callback_data="❌"}},
+{
+{text = "سبعه" callback_data="✖"},
+},
+{
+{text = "ثمانية" callback_data="mel81"},
+},
+{
+{text = "أربعه " callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -985,7 +1297,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel82"}},
+{
+{text = "أكمل" callback_data="mel82"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -996,9 +1310,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "الادبيين" callback_data="✖"}},
-{{text = "المخضرمين" callback_data="mel83"}},
-{{text = "النبلاء " callback_data="❌"}},
+{
+{text = "الادبيين" callback_data="✖"},
+},
+{
+{text = "المخضرمين" callback_data="mel83"},
+},
+{
+{text = "النبلاء " callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1009,7 +1329,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel84"}},
+{
+{text = "أكمل" callback_data="mel84"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1022,7 +1344,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "ابدء المستوي الثالث " callback_data="mel85"}},
+{
+{text = "ابدء المستوي الثالث " callback_data="mel85"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1033,9 +1357,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "الفرانسيوم" callback_data="✖"}},
-{{text = "الرديوم" callback_data="mel86"}},
-{{text = "الكاليفورنيوم " callback_data="❌"}},
+{
+{text = "الفرانسيوم" callback_data="✖"},
+},
+{
+{text = "الرديوم" callback_data="mel86"},
+},
+{
+{text = "الكاليفورنيوم " callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1046,7 +1376,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel87"}},
+{
+{text = "أكمل" callback_data="mel87"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1057,9 +1389,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "مصر" callback_data="✖"}},
-{{text = "الجزائر" callback_data="mel88"}},
-{{text = "السودان " callback_data="❌"}},
+{
+{text = "مصر" callback_data="✖"},
+},
+{
+{text = "الجزائر" callback_data="mel88"},
+},
+{
+{text = "السودان " callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1070,7 +1408,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel89"}},
+{
+{text = "أكمل" callback_data="mel89"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1081,9 +1421,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "العراق" callback_data="✖"}},
-{{text = "اليمن " callback_data="❌"}},
-{{text = "سوريا" callback_data="mel90"}},
+{
+{text = "العراق" callback_data="✖"},
+},
+{
+{text = "اليمن " callback_data="❌"},
+},
+{
+{text = "سوريا" callback_data="mel90"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1094,7 +1440,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel92"}},
+{
+{text = "أكمل" callback_data="mel92"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1105,9 +1453,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "الناقه" callback_data="✖"}},
-{{text = "الحمار " callback_data="❌"}},
-{{text = "الخروف" callback_data="mel93"}},
+{
+{text = "الناقه" callback_data="✖"},
+},
+{
+{text = "الحمار " callback_data="❌"},
+},
+{
+{text = "الخروف" callback_data="mel93"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1118,7 +1472,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel94"}},
+{
+{text = "أكمل" callback_data="mel94"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1129,9 +1485,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "700 عضلة" callback_data="✖"}},
-{{text = "800 عضلة" callback_data="❌"}},
-{{text = "900 عضلة" callback_data="mel95"}},
+{
+{text = "700 عضلة" callback_data="✖"},
+},
+{
+{text = "800 عضلة" callback_data="❌"},
+},
+{
+{text = "900 عضلة" callback_data="mel95"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1142,7 +1504,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel96"}},
+{
+{text = "أكمل" callback_data="mel96"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1153,9 +1517,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "القصيم " callback_data="✖"}},
-{{text = "بريده" callback_data="mel97"}},
-{{text = "عنيزة" callback_data="❌"}},
+{
+{text = "القصيم " callback_data="✖"},
+},
+{
+{text = "بريده" callback_data="mel97"},
+},
+{
+{text = "عنيزة" callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1166,7 +1536,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel98"}},
+{
+{text = "أكمل" callback_data="mel98"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1177,9 +1549,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "امرؤ القيس " callback_data="✖"}},
-{{text = "المتنبي" callback_data="mel99"}},
-{{text = "عنتره" callback_data="❌"}},
+{
+{text = "امرؤ القيس " callback_data="✖"},
+},
+{
+{text = "المتنبي" callback_data="mel99"},
+},
+{
+{text = "عنتره" callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1190,7 +1568,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel100"}},
+{
+{text = "أكمل" callback_data="mel100"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1201,9 +1581,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "الزيت " callback_data="✖"}},
-{{text = "البترول" callback_data="❌"}},
-{{text = "النفط" callback_data="mel101"}},
+{
+{text = "الزيت " callback_data="✖"},
+},
+{
+{text = "البترول" callback_data="❌"},
+},
+{
+{text = "النفط" callback_data="mel101"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1214,7 +1600,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel102"}},
+{
+{text = "أكمل" callback_data="mel102"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1225,9 +1613,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "العسل" callback_data="mel103"}},
-{{text = "التمره " callback_data="✖"}},
-{{text = "التفاح" callback_data="❌"}},
+{
+{text = "العسل" callback_data="mel103"},
+},
+{
+{text = "التمره " callback_data="✖"},
+},
+{
+{text = "التفاح" callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1238,7 +1632,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel104"}},
+{
+{text = "أكمل" callback_data="mel104"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1249,9 +1645,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "البانومتر " callback_data="✖"}},
-{{text = "البارومتر" callback_data="mel105"}},
-{{text = "الترمومتر" callback_data="❌"}},
+{
+{text = "البانومتر " callback_data="✖"},
+},
+{
+{text = "البارومتر" callback_data="mel105"},
+},
+{
+{text = "الترمومتر" callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1262,7 +1664,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel106"}},
+{
+{text = "أكمل" callback_data="mel106"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1273,9 +1677,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "جاليليو" callback_data="mel107"}},
-{{text = "غاليليو " callback_data="✖"}},
-{{text = "يوهانس" callback_data="❌"}},
+{
+{text = "جاليليو" callback_data="mel107"},
+},
+{
+{text = "غاليليو " callback_data="✖"},
+},
+{
+{text = "يوهانس" callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1286,7 +1696,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel108"}},
+{
+{text = "أكمل" callback_data="mel108"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1297,9 +1709,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "فيرنر " callback_data="✖"}},
-{{text = "نيلز بورت" callback_data="❌"}},
-{{text = "كينج جيليت" callback_data="mel109"}},
+{
+{text = "فيرنر " callback_data="✖"},
+},
+{
+{text = "نيلز بورت" callback_data="❌"},
+},
+{
+{text = "كينج جيليت" callback_data="mel109"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1310,7 +1728,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel110"}},
+{
+{text = "أكمل" callback_data="mel110"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1321,9 +1741,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "بليز باسكال" callback_data="mel111"}},
-{{text = "جاك كليبي " callback_data="✖"}},
-{{text = "تيكساس" callback_data="❌"}},
+{
+{text = "بليز باسكال" callback_data="mel111"},
+},
+{
+{text = "جاك كليبي " callback_data="✖"},
+},
+{
+{text = "تيكساس" callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1334,7 +1760,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel112"}},
+{
+{text = "أكمل" callback_data="mel112"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1345,9 +1773,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "البنكرياس " callback_data="✖"}},
-{{text = "الكبد" callback_data="mel113"}},
-{{text = "الكليه" callback_data="❌"}},
+{
+{text = "البنكرياس " callback_data="✖"},
+},
+{
+{text = "الكبد" callback_data="mel113"},
+},
+{
+{text = "الكليه" callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1358,7 +1792,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel114"}},
+{
+{text = "أكمل" callback_data="mel114"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1369,9 +1805,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "القرد" callback_data="mel115"}},
-{{text = "الكلب " callback_data="✖"}},
-{{text = "الانسان" callback_data="❌"}},
+{
+{text = "القرد" callback_data="mel115"},
+},
+{
+{text = "الكلب " callback_data="✖"},
+},
+{
+{text = "الانسان" callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1382,7 +1824,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel116"}},
+{
+{text = "أكمل" callback_data="mel116"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1393,9 +1837,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "غينيا " callback_data="✖"}},
-{{text = "بورنيو" callback_data="❌"}},
-{{text = "غرينلاند" callback_data="mel117"}},
+{
+{text = "غينيا " callback_data="✖"},
+},
+{
+{text = "بورنيو" callback_data="❌"},
+},
+{
+{text = "غرينلاند" callback_data="mel117"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1406,7 +1856,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel118"}},
+{
+{text = "أكمل" callback_data="mel118"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1417,9 +1869,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "30 سنه " callback_data="✖"}},
-{{text = "32 سنه" callback_data="mel119"}},
-{{text = "34 سنه" callback_data="❌"}},
+{
+{text = "30 سنه " callback_data="✖"},
+},
+{
+{text = "32 سنه" callback_data="mel119"},
+},
+{
+{text = "34 سنه" callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1430,7 +1888,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel120"}},
+{
+{text = "أكمل" callback_data="mel120"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1441,9 +1901,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "ينهار التلجرام " callback_data="mel121"}},
-{{text = "يموت الكل" callback_data="mel121"}},
-{{text = "مستحييل" callback_data="mel121"}},
+{
+{text = "ينهار التلجرام " callback_data="mel121"},
+},
+{
+{text = "يموت الكل" callback_data="mel121"},
+},
+{
+{text = "مستحييل" callback_data="mel121"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1454,9 +1920,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "النيتروجين " callback_data="✖"}},
-{{text = "الكالسيوم" callback_data="❌"}},
-{{text = "الهيدروجين" callback_data="mel122"}},
+{
+{text = "النيتروجين " callback_data="✖"},
+},
+{
+{text = "الكالسيوم" callback_data="❌"},
+},
+{
+{text = "الهيدروجين" callback_data="mel122"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1467,7 +1939,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel123"}},
+{
+{text = "أكمل" callback_data="mel123"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1478,9 +1952,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "عمرو بن العاص رضي الله عنه " callback_data="✖"}},
-{{text = "عمر بن الخطاب رضي الله عنه" callback_data="mel124"}},
-{{text = "عمرو بن عبد العزيز رضي الله عنه" callback_data="❌"}},
+{
+{text = "عمرو بن العاص رضي الله عنه " callback_data="✖"},
+},
+{
+{text = "عمر بن الخطاب رضي الله عنه" callback_data="mel124"},
+},
+{
+{text = "عمرو بن عبد العزيز رضي الله عنه" callback_data="❌"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1491,7 +1971,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "أكمل" callback_data="mel125"}},
+{
+{text = "أكمل" callback_data="mel125"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1502,9 +1984,15 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "الكسائي " callback_data="✖"}},
-{{text = "الجوهري" callback_data="❌"}},
-{{text = "ابو الاسد الدولي" callback_data="mel126"}},
+{
+{text = "الكسائي " callback_data="✖"},
+},
+{
+{text = "الجوهري" callback_data="❌"},
+},
+{
+{text = "ابو الاسد الدولي" callback_data="mel126"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1515,7 +2003,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "النهاية" callback_data="endmell"}},
+{
+{text = "النهاية" callback_data="endmell"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -1526,7 +2016,9 @@ local Text =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = "اللعب مجددا" callback_data="mel1"}},
+{
+{text = "اللعب مجددا" callback_data="mel1"},
+},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
