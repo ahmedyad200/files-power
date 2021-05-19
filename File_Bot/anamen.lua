@@ -1,6 +1,11 @@
 local function Reply(msg)
 local text = msg.content_.text_
 
+if text == 'انا مين' and DEV(msg) then 
+send(msg.chat_id_,msg.id_, 'انت مبرمج السورس 😊') 
+return false
+end
+
 if text == 'انا مين' and SudoBot(msg) then 
 send(msg.chat_id_,msg.id_, 'انت مطوري تاج راسي 😊') 
 return false
